@@ -39,7 +39,13 @@ const FolderData = ({ explorerData, updateExplorerData, deleteExplorerData, togg
 
     return (
         <div style={{ width: '100%', fontSize: 15, height: 'fit-content', margin: "15px", marginTop: 20, marginBottom: 20 }}>
-            <span onClick={() => toggleFolder(explorerData.id)}>
+            <span onClick={() => {
+                setShowInput({
+                    isVisible: false,
+                    folderId: '',
+                    isFolder: false,
+                }), toggleFolder(explorerData.id)
+            }}>
                 {explorerData?.isFolder ? '📂' : '📄'} {explorerData.name?.toUpperCase()}
             </span>
             <span>
