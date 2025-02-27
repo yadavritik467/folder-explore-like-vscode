@@ -29,3 +29,15 @@ run npm install
 
 run  npm run dev
 ```
+### ** Backend  **
+
+
+```
+cd backend
+
+run npm i
+
+run npm start
+```
+
+it will export the the folder from web to you local disk name as exported_folder/
